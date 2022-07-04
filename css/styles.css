@@ -1,0 +1,200 @@
+:root {
+  /* fonts */
+  --main-font: 'roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+  --main-txt-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --light-txt-cl: #ffffff;
+  --secondary-txt-color: #757575;
+  /* bg colors */
+  --dark-bg-cl: #2f303a;
+  --btn-bg-collors: #f5f4fa;
+  --btn-focus-bg-cl: #2196f3;
+}
+/* body */
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
+}
+/* logo */
+.web {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-txt-cl);
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* header */
+.header-link,
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-contact {
+  color: var(--secondary-txt-color);
+}
+.header-link:focus,
+.header-link:hover,
+.header-contact:focus,
+.header-contact:hover {
+  color: var(--accent-txt-cl);
+}
+.header-link-current {
+  color: var(--accent-txt-cl);
+}
+/* hero */
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+.hero-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Hero button */
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  cursor: pointer;
+  color: var(--light-txt-cl);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* Peculiarities */
+.features-txt {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+}
+/* saction-tittles */
+.saction-tittle {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+/* team */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+.team-profession {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+}
+/* footer */
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+.footer-link-geo:focus,
+.footer-link-geo:hover,
+.footer-link-contact:focus,
+.footer-link-contact:hover {
+  color: var(--accent-txt-cl);
+}
+.footer-link-geo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-logo {
+  font-family: var(--secondary-font);
+
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+
+/* PORTFOLIO */
+
+/* portfolio buttons */
+.main-nav-btn:hover,
+.main-nav-btn:focus {
+  background-color: var(--accent-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.main-nav-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  background-color: var(--btn-bg-collors);
+  border-radius: 4px;
+}
+.btn-current {
+  background-color: var(--btn-focus-bg-cl);
+}
+/* portfolio projects */
+.portfolio-projects {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.portfolio-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+}
+/*  */
